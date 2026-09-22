@@ -3,13 +3,7 @@
 Soluções em Python para os exercícios 16 a 35 do material **"100 Exercícios
 de Lógica de Programação"** (Módulo 02 — Estruturas Condicionais).
 
-Cada exercício foi implementado como um módulo independente, com:
 
-- uma função **pura** (fácil de testar), contendo a lógica do problema;
-- um bloco `main()` que lê a entrada do usuário via terminal e imprime a
-  saída, reproduzindo o "Exemplo de execução" do enunciado;
-- testes automatizados baseados nas tabelas **"Teste seu programa"** de
-  cada exercício.
 
 ## Estrutura do repositório
 
@@ -39,57 +33,3 @@ Cada exercício foi implementado como um módulo independente, com:
 └── tests/
     └── test_exercicios.py
 ```
-
-## Requisitos
-
-- Python 3.8 ou superior (nenhuma biblioteca externa é necessária).
-
-## Como executar um exercício
-
-Rode qualquer módulo diretamente, a partir da raiz do repositório:
-
-```bash
-python -m exercicios.ex16
-```
-
-Exemplo (Exercício 16):
-
-```
-Digite um número: -7
-
-Resultado: NEGATIVO
-```
-
-## Como rodar os testes
-
-Com `unittest` (nenhuma dependência extra):
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-Ou, se preferir `pytest`:
-
-```bash
-pip install pytest
-python -m pytest tests/ -v
-```
-
-Os 20 exercícios possuem testes cobrindo os casos apresentados nas tabelas
-"Teste seu programa" de cada enunciado.
-
-## Como subir este projeto para o GitHub
-
-```bash
-cd caminho/para/este/repositorio
-git init
-git add .
-git commit -m "Exercícios 16 a 35 - Lógica de Programação"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
-git push -u origin main
-```
-
-## Licença
-
-Uso livre para fins de estudo.
